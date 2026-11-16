@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urla Saran Tej - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #c9a227;
+      --primary-dark: #8b7500;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .resume-wrapper {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    .resume-header {
+      background: linear-gradient(135deg, #c9a227 0%, #b8860b 100%);
+      color: white;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
+    }
+    .name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .title {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      font-weight: 500;
+      margin-top: 0.25rem;
+    }
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+    }
+    .contact-bar a {
+      color: white;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .resume-body {
+      padding: 2.5rem 2rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary-dark);
+      border-bottom: 2px solid #fef3c7;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-block {
+      margin-bottom: 2rem;
+    }
+    .edu-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .edu-table th, .edu-table td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.85rem;
+      text-align: left;
+    }
+    .edu-table th {
+      background: #fffbeb;
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+    .skill-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skill-badge {
+      padding: 0.35rem 0.75rem;
+      background: #f1f5f9;
+      border-radius: 9999px;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    ul {
+      list-style-position: inside;
+      font-size: 0.925rem;
+      line-height: 1.8;
+      color: #334155;
+    }
+    .action-bar {
+      max-width: 850px;
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      padding: 0.65rem 1.4rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: none;
+    }
+    .btn-primary {
+      background: #c9a227;
+      color: white;
+    }
+    .btn-secondary {
+      background: #e2e8f0;
+      color: #334155;
+    }
+    @media print {
+      body { padding: 0; background: white; }
+      .action-bar { display: none; }
+      .resume-wrapper { border: none; box-shadow: none; border-radius: 0; }
+    }
+    @media (max-width: 768px) {
+      .resume-body { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="index.html" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to Interactive Portfolio</a>
+    <button onclick="window.print()" class="btn btn-primary"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-wrapper" style="margin-top: 1rem;">
+    <div class="resume-header">
+      <img src="profile.jpg" alt="Urla Saran Tej" class="avatar" onerror="this.src='https://avatars.githubusercontent.com/u/240652210?v=4'">
+      <h1 class="name">URLA SARAN TEJ</h1>
+      <p class="title">MCA Student | Full Stack Web Developer</p>
+      
+      <div class="contact-bar">
+        <a href="mailto:tejurla12@gmail.com"><i class="fa-solid fa-envelope"></i> tejurla12@gmail.com</a>
+        <a href="tel:+917893836775"><i class="fa-solid fa-phone"></i> +91 7893836775</a>
+        <span><i class="fa-solid fa-location-dot"></i> Eluru, AP / Pondicherry</span>
+        <a href="https://github.com/tejurla12" target="_blank"><i class="fa-brands fa-github"></i> github.com/tejurla12</a>
+      </div>
+    </div>
+
+    <div class="resume-body">
+      <!-- Main Column -->
+      <div class="main-col">
+        <div class="section-block">
+          <h2><i class="fa-solid fa-compass"></i> Career Objective</h2>
+          <p style="font-size: 0.95rem; color: #475569;">
+            To work in an innovative organization where I can utilize my technical skills, enhance my knowledge, and contribute towards the growth of the company while continuously learning modern technologies.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-graduation-cap"></i> Educational Qualification</h2>
+          <table class="edu-table">
+            <thead>
+              <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Board/Univ</th>
+                <th>Year</th>
+                <th>%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>MCA</strong></td>
+                <td>Pondicherry University</td>
+                <td>Pondicherry Univ</td>
+                <td>2025–Pres.</td>
+                <td><strong>80%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>B.Sc (Comp Sci)</strong></td>
+                <td>Sir C R R College</td>
+                <td>AKNU</td>
+                <td>2025</td>
+                <td><strong>80%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Intermediate (MPC)</strong></td>
+                <td>Sir C R R College</td>
+                <td>AP Board</td>
+                <td>2022</td>
+                <td><strong>85%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>SSLC</strong></td>
+                <td>Oxford School</td>
+                <td>AP Board</td>
+                <td>2020</td>
+                <td><strong>90%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-code"></i> Key Projects</h2>
+          <ul>
+            <li><strong>Student Management System:</strong> Comprehensive CRUD portal with database persistence, course registration, and student record filtering.</li>
+            <li><strong>Personal Portfolio Website:</strong> Modern responsive showcase with dynamic live GitHub synchronization and gallery management.</li>
+            <li><strong>Library Management System:</strong> Relational database software managing inventory, book issues, and returns with fine computation.</li>
+            <li><strong>Anime Merchandise Web Page:</strong> Styled e-commerce product showcase built with semantic HTML and CSS styling.</li>
+            <li><strong>Anime Quiz Application:</strong> Interactive JavaScript trivia game with timed events and score calculation.</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-signature"></i> Declaration</h2>
+          <p style="font-size: 0.875rem; color: #64748b;">
+            I hereby declare that the information furnished above is true and correct to the best of my knowledge and belief.
+          </p>
+          <div style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.875rem; font-weight: 600;">
+            <span>Place: Pondicherry</span>
+            <span>URLA SARAN TEJ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column -->
+      <div class="side-col">
+        <div class="section-block">
+          <h2><i class="fa-solid fa-laptop-code"></i> Technical Skills</h2>
+          <div class="skill-badges">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Git & GitHub</span>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-trophy"></i> Achievements</h2>
+          <ul>
+            <li>Completed Full-Time Internship at TCS</li>
+            <li>Won Coding Competition</li>
+            <li>Completed NPTEL Certification Courses</li>
+            <li>Participated in Technical Symposium</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-language"></i> Languages</h2>
+          <ul>
+            <li>English</li>
+            <li>Telugu</li>
+            <li>Tamil</li>
+            <li>German</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-heart"></i> Hobbies</h2>
+          <ul>
+            <li>Playing Badminton</li>
+            <li>Video Editing</li>
+            <li>Photography</li>
+            <li>Reading Books</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <h2><i class="fa-solid fa-user-tag"></i> Personal Details</h2>
+          <p style="font-size: 0.85rem; line-height: 1.8; color: #475569;">
+            <strong>Father:</strong> Urla Murali Krishna<br>
+            <strong>DOB:</strong> 12-02-2005<br>
+            <strong>Gender:</strong> Male
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

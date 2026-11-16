@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urla Saran Tej | MCA Student & Full Stack Web Developer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Urla Saran Tej - MCA Student at Pondicherry University & Full Stack Web Developer. Specializing in React, Node.js, Python, Java, and modern web applications.">
+  <meta name="keywords" content="Urla Saran Tej, Saran Tej, tejurla12, Full Stack Developer, MCA Pondicherry University, React Developer, Web Portfolio">
+  <meta name="author" content="Urla Saran Tej">
+
+  <!-- Open Graph / GitHub Link Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tejurla12.github.io/">
+  <meta property="og:title" content="Urla Saran Tej | Portfolio & GitHub Projects">
+  <meta property="og:description" content="Explore my portfolio, academic background in MCA, full-stack web applications, and live GitHub repositories.">
+  <meta property="og:image" content="profile.jpg">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Orbs Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <div class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#hero" class="brand-logo">
+        <div class="brand-badge">ST</div>
+        <span>Saran Tej<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-btn" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="nav-cta-btn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Full Stack Opportunities & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text">Urla Saran Tej</span>
+          </h1>
+
+          <div class="hero-typewriter-wrap">
+            <span>A passionate</span>
+            <span class="typewriter-text" id="typewriter">Full Stack Developer</span>
+          </div>
+
+          <p class="hero-description">
+            MCA scholar at <strong>Pondicherry University</strong> with a solid foundation in computer science and modern web architecture. Dedicated to building responsive, authentic, and high-impact digital experiences using React, Node.js, Python, and SQL.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="https://github.com/tejurla12" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Profile</span>
+            </a>
+            <a href="#resumeModal" id="viewResumeBtn" class="btn btn-outline">
+              <i class="fa-solid fa-file-invoice"></i>
+              <span>View Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-info">
+            <div class="quick-info-item">
+              <i class="fa-solid fa-location-dot" style="color: #ef4444;"></i>
+              <span>Eluru, AP & Pondicherry</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fa-solid fa-graduation-cap" style="color: #6366f1;"></i>
+              <span>MCA (2025–Present)</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fa-solid fa-building" style="color: #10b981;"></i>
+              <span>Ex-TCS Intern</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Showcase Card with Floating Chips -->
+        <div class="hero-visual">
+          <div class="hero-avatar-card">
+            <div class="hero-avatar-inner">
+              <img src="profile.jpg" alt="Urla Saran Tej" class="hero-avatar-img" onerror="this.src='https://avatars.githubusercontent.com/u/240652210?v=4'">
+            </div>
+
+            <!-- Floating Context Badges -->
+            <div class="floating-chip chip-1">
+              <i class="fa-brands fa-react" style="color: #61dafb; font-size: 1.1rem;"></i>
+              <span>React & Node.js</span>
+            </div>
+
+            <div class="floating-chip chip-2">
+              <i class="fa-solid fa-star" style="color: #f59e0b; font-size: 1rem;"></i>
+              <span>80% MCA Scholar</span>
+            </div>
+
+            <div class="floating-chip chip-3">
+              <i class="fa-solid fa-camera" style="color: #ec4899; font-size: 1rem;"></i>
+              <span>Video & Visual Creator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Metrics Summary Strip (Rounded Boxes)
+       ========================================================================== -->
+  <div class="container metrics-strip">
+    <div class="metrics-grid">
+      <div class="rounded-box metric-card">
+        <div class="metric-number gradient-text">85%+</div>
+        <div class="metric-label">Academic Distinction</div>
+      </div>
+      <div class="rounded-box metric-card">
+        <div class="metric-number gradient-text">5+</div>
+        <div class="metric-label">Completed Software Projects</div>
+      </div>
+      <div class="rounded-box metric-card">
+        <div class="metric-number gradient-text">100%</div>
+        <div class="metric-label">TCS Full-Time Internship Alum</div>
+      </div>
+      <div class="rounded-box metric-card">
+        <div class="metric-number gradient-text">4</div>
+        <div class="metric-label">Languages (EN, TE, TA, DE)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-regular fa-user"></i> About Me</span>
+        <h2 class="section-title">Driven by Innovation & Engineering</h2>
+        <p class="section-subtitle">Bridging strong foundational computer science with modern frontend and backend technologies.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Career Objective Rounded Box -->
+        <div class="rounded-box objective-box">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <h3 style="margin-bottom: 0.75rem;">Career Objective</h3>
+          <p class="about-text">
+            "To work in an innovative organization where I can utilize my technical skills, enhance my knowledge, and contribute towards the growth of the company while continuously learning modern technologies."
+          </p>
+          <p class="about-text">
+            Currently pursuing my Master of Computer Applications (MCA) at the prestigious <strong>Pondicherry University</strong>. I enjoy crafting end-to-end web architectures, solving algorithms, and applying creative thinking to software design and multimedia production.
+          </p>
+
+          <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1rem;">Spoken Languages:</h4>
+          <div class="badge-list">
+            <span class="context-pill"><i class="fa-solid fa-globe"></i> English (Professional)</span>
+            <span class="context-pill"><i class="fa-solid fa-comment-dots"></i> Telugu (Native)</span>
+            <span class="context-pill"><i class="fa-solid fa-comment-dots"></i> Tamil (Conversational)</span>
+            <span class="context-pill"><i class="fa-solid fa-flag"></i> German (Elementary)</span>
+          </div>
+        </div>
+
+        <!-- Personal Details & Interests Box -->
+        <div class="rounded-box">
+          <h3 style="margin-bottom: 1.25rem;"><i class="fa-solid fa-address-card" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Personal Highlights</h3>
+          
+          <div class="personal-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Full Name</span>
+              <span class="detail-value">Urla Saran Tej</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Father's Name</span>
+              <span class="detail-value">Urla Murali Krishna</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email</span>
+              <span class="detail-value" style="word-break: break-all;">tejurla12@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Phone</span>
+              <span class="detail-value">+91 7893836775</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Hometown</span>
+              <span class="detail-value">Eluru, Andhra Pradesh</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Current University</span>
+              <span class="detail-value">Pondicherry University</span>
+            </div>
+          </div>
+
+          <h4 style="margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1rem;"><i class="fa-solid fa-heart" style="color: #ec4899; margin-right: 0.4rem;"></i> Hobbies & Interests:</h4>
+          <div class="badge-list">
+            <span class="context-pill"><i class="fa-solid fa-video"></i> Video Editing</span>
+            <span class="context-pill"><i class="fa-solid fa-camera-retro"></i> Photography</span>
+            <span class="context-pill"><i class="fa-solid fa-volleyball"></i> Badminton</span>
+            <span class="context-pill"><i class="fa-solid fa-book"></i> Reading Books</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Education Section (Rounded Boxes Timeline)
+       ========================================================================== -->
+  <section id="education" style="background: var(--bg-glass);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+        <h2 class="section-title">Educational Milestones</h2>
+        <p class="section-subtitle">Consistent academic high performance and strong analytical training.</p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Item 1: MCA -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="rounded-box timeline-box">
+            <div class="edu-header">
+              <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+              <span class="edu-score-badge">80% Aggregate</span>
+            </div>
+            <div class="edu-institution">
+              <i class="fa-solid fa-building-columns" style="color: var(--accent-primary);"></i>
+              <span>Pondicherry University &bull; 2025 &ndash; Present</span>
+            </div>
+            <p class="edu-desc">
+              Currently pursuing advanced coursework in Software Engineering, Advanced Web Technologies, Distributed Database Systems, and Cloud Computing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: B.Sc Computer Science -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="rounded-box timeline-box">
+            <div class="edu-header">
+              <h3 class="edu-degree">Bachelor of Science in Computer Science (B.Sc)</h3>
+              <span class="edu-score-badge">80% Marks</span>
+            </div>
+            <div class="edu-institution">
+              <i class="fa-solid fa-building-columns" style="color: var(--accent-cyan);"></i>
+              <span>Sir C R R College (Adikavi Nannaya University - AKNU) &bull; Graduated 2025</span>
+            </div>
+            <p class="edu-desc">
+              Core grounding in Object-Oriented Programming (Java/Python), Data Structures, Relational Database Management Systems (SQL), Operating Systems, and Web Application development.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Intermediate -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="rounded-box timeline-box">
+            <div class="edu-header">
+              <h3 class="edu-degree">Higher Secondary / Intermediate (MPC)</h3>
+              <span class="edu-score-badge">85% Marks</span>
+            </div>
+            <div class="edu-institution">
+              <i class="fa-solid fa-school" style="color: var(--accent-amber);"></i>
+              <span>Sir C R R College &bull; Board of Intermediate Education, AP &bull; 2022</span>
+            </div>
+            <p class="edu-desc">
+              Specialized in Mathematics, Physics, and Chemistry, laying a mathematical foundation for algorithmic problem-solving and software logic.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4: SSLC -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="rounded-box timeline-box">
+            <div class="edu-header">
+              <h3 class="edu-degree">Secondary School Certificate (SSLC)</h3>
+              <span class="edu-score-badge">90% High Distinction</span>
+            </div>
+            <div class="edu-institution">
+              <i class="fa-solid fa-award" style="color: var(--accent-emerald);"></i>
+              <span>Oxford School &bull; Board of Secondary Education, AP &bull; 2020</span>
+            </div>
+            <p class="edu-desc">
+              Graduated with top academic standing across core sciences and mathematics.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Skills Section
+       ========================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Competencies</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Proficient in building modern, scalable software across both client and server stacks.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend Development Box -->
+        <div class="rounded-box skill-category-box">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-brands fa-react"></i></div>
+            <h4>Frontend Stack</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5</span>
+            <span class="skill-chip"><i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i> CSS3</span>
+            <span class="skill-chip"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript (ES6+)</span>
+            <span class="skill-chip"><i class="fa-brands fa-react" style="color: #61dafb;"></i> React.js</span>
+            <span class="skill-chip"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</span>
+          </div>
+        </div>
+
+        <!-- Backend Development Box -->
+        <div class="rounded-box skill-category-box">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-brands fa-node-js"></i></div>
+            <h4>Backend Stack</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip"><i class="fa-brands fa-node" style="color: #339933;"></i> Node.js</span>
+            <span class="skill-chip"><i class="fa-brands fa-java" style="color: #ea2d2e;"></i> Java</span>
+            <span class="skill-chip"><i class="fa-brands fa-python" style="color: #3776ab;"></i> Python</span>
+            <span class="skill-chip"><i class="fa-solid fa-server"></i> RESTful APIs</span>
+            <span class="skill-chip"><i class="fa-solid fa-network-wired"></i> MVC Pattern</span>
+          </div>
+        </div>
+
+        <!-- Databases & Storage Box -->
+        <div class="rounded-box skill-category-box">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-database"></i></div>
+            <h4>Databases & Data</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip"><i class="fa-solid fa-database" style="color: #00758f;"></i> SQL</span>
+            <span class="skill-chip"><i class="fa-solid fa-table"></i> MySQL</span>
+            <span class="skill-chip"><i class="fa-solid fa-diagram-project"></i> Relational Modeling</span>
+            <span class="skill-chip"><i class="fa-solid fa-bolt"></i> CRUD Operations</span>
+          </div>
+        </div>
+
+        <!-- Tools & Multimedia Box -->
+        <div class="rounded-box skill-category-box">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-toolbox"></i></div>
+            <h4>Dev Tools & Creative</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git</span>
+            <span class="skill-chip"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-chip"><i class="fa-solid fa-code"></i> VS Code</span>
+            <span class="skill-chip"><i class="fa-solid fa-clapperboard" style="color: #ec4899;"></i> Video Editing</span>
+            <span class="skill-chip"><i class="fa-solid fa-camera"></i> Photography</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects & Live GitHub Integration Section
+       ========================================================================== -->
+  <section id="projects" style="background: var(--bg-glass);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-folder-open"></i> Portfolio Work</span>
+        <h2 class="section-title">Featured Projects & Live GitHub Repos</h2>
+        <p class="section-subtitle">A showcase of full-stack web applications and live public repositories synced with GitHub.</p>
+      </div>
+
+      <!-- Live GitHub Sync Banner -->
+      <div class="github-sync-banner">
+        <div class="sync-info">
+          <img src="https://avatars.githubusercontent.com/u/240652210?v=4" alt="tejurla12" class="github-avatar" onerror="this.src='profile.jpg'">
+          <div>
+            <strong>GitHub Public Repositories (@tejurla12)</strong>
+            <div class="sync-status" id="syncStatus">
+              <i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Connected to GitHub API &bull; Dynamic Live Sync
+            </div>
+          </div>
+        </div>
+        <button id="refreshGithubBtn" class="sync-refresh-btn" title="Refresh repositories from GitHub API">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <span>Sync Repos</span>
+        </button>
+      </div>
+
+      <!-- Projects Filter Bar -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-layer-group"></i> All Work (<span id="countAll">5</span>)
+        </button>
+        <button class="filter-btn" data-filter="featured">
+          <i class="fa-solid fa-star"></i> Featured Systems (<span id="countFeatured">3</span>)
+        </button>
+        <button class="filter-btn" data-filter="github">
+          <i class="fa-brands fa-github"></i> Live GitHub Repos (<span id="countGithub">2</span>)
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsContainer">
+        
+        <!-- Project 1: Student Management System (From Resume) -->
+        <div class="rounded-box project-card" data-category="featured">
+          <div class="project-card-header">
+            <span class="project-badge badge-featured"><i class="fa-solid fa-star"></i> Featured Work</span>
+            <div class="icon-link" title="Full Stack Project"><i class="fa-solid fa-laptop-code"></i></div>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">
+            A comprehensive web portal designed for educational institutions to manage student records, course enrollment, academic performance, and fee tracking with role-based access control.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-code"></i> Full Stack Web App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tejurla12" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Personal Portfolio Website (From Resume & Live Site) -->
+        <div class="rounded-box project-card" data-category="featured">
+          <div class="project-card-header">
+            <span class="project-badge badge-featured"><i class="fa-solid fa-star"></i> Featured Work</span>
+            <div class="icon-link" title="Web App"><i class="fa-solid fa-globe"></i></div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Platform</h3>
+          <p class="project-desc">
+            A high-performance modern developer portfolio featuring glassmorphic rounded architecture, dark/light theme switching, interactive image gallery manager, and live GitHub API integration.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3 (Modern)</span>
+            <span class="tech-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">GitHub API</span>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-check"></i> Live Production</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tejurla12" target="_blank" rel="noopener noreferrer" class="icon-link" title="View GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#hero" class="icon-link" title="You are here!">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Library Management System (From Resume) -->
+        <div class="rounded-box project-card" data-category="featured">
+          <div class="project-card-header">
+            <span class="project-badge badge-featured"><i class="fa-solid fa-star"></i> Featured Work</span>
+            <div class="icon-link" title="Database Application"><i class="fa-solid fa-book-bookmark"></i></div>
+          </div>
+          <h3 class="project-title">Library Management System</h3>
+          <p class="project-desc">
+            An automated database application handling book issuance, inventory indexing, fine calculations, return reminders, and comprehensive search queries for large-scale book collections.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">SQL Database</span>
+            <span class="tech-tag">OOP Architecture</span>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-database"></i> Database & Logic</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tejurla12" target="_blank" rel="noopener noreferrer" class="icon-link" title="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Anime Merchandise Web Page (From Public GitHub Repo) -->
+        <div class="rounded-box project-card" data-category="github">
+          <div class="project-card-header">
+            <span class="project-badge badge-github"><i class="fa-brands fa-github"></i> GitHub Repo</span>
+            <div class="icon-link" title="E-Commerce Interface"><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+          <h3 class="project-title">ANIME-MERCHANDISE-WEBPAGE-</h3>
+          <p class="project-desc">
+            Custom themed anime e-commerce frontend interface (One Piece themed) with styled product showcases, responsive card catalog, and interactive merchandising layouts.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Responsive Design</span>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-circle" style="color: #e34c26; font-size: 0.6rem;"></i> HTML</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tejurla12/ANIME-MERCHANDISE-WEBPAGE-" target="_blank" rel="noopener noreferrer" class="icon-link" title="Open GitHub Repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Anime Quizz (From Public GitHub Repo) -->
+        <div class="rounded-box project-card" data-category="github">
+          <div class="project-card-header">
+            <span class="project-badge badge-github"><i class="fa-brands fa-github"></i> GitHub Repo</span>
+            <div class="icon-link" title="Interactive Game"><i class="fa-solid fa-gamepad"></i></div>
+          </div>
+          <h3 class="project-title">ANIME-QUIZZ</h3>
+          <p class="project-desc">
+            Dynamic web-based trivia application built with JavaScript logic, timer events, score calculation, randomized question sets, and responsive visual feedback for anime fans.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">DOM Manipulation</span>
+            <span class="tech-tag">CSS Animation</span>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-circle" style="color: #f1e05a; font-size: 0.6rem;"></i> JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tejurla12/ANIME-QUIZZ" target="_blank" rel="noopener noreferrer" class="icon-link" title="Open GitHub Repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Photo & Creative Gallery ("Add New Image" System)
+       ========================================================================== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="gallery-top-controls">
+        <div>
+          <span class="section-badge"><i class="fa-solid fa-images"></i> Visual Showcase</span>
+          <h2 class="section-title" style="margin-bottom: 0.25rem;">Photo & Media Gallery</h2>
+          <p class="section-subtitle">Showcase personal photos, project screenshots, certificates, and creative captures.</p>
+        </div>
+        
+        <!-- Interactive Add Image Trigger -->
+        <button id="openAddImageModalBtn" class="btn btn-primary" title="Add your own image or photo to the portfolio">
+          <i class="fa-solid fa-plus"></i>
+          <span>Add New Image</span>
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Item 1: Profile Image -->
+        <div class="gallery-card">
+          <img src="profile.jpg" alt="Urla Saran Tej" class="gallery-img" onerror="this.src='https://avatars.githubusercontent.com/u/240652210?v=4'">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Profile</span>
+            <div class="gallery-title">Urla Saran Tej</div>
+            <div class="gallery-caption">MCA Student & Web Developer Profile</div>
+          </div>
+        </div>
+
+        <!-- Item 2: Coding & University Life -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Full Stack Coding" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Development</span>
+            <div class="gallery-title">Full Stack Web Architecture</div>
+            <div class="gallery-caption">Building scalable React and Node.js solutions</div>
+          </div>
+        </div>
+
+        <!-- Item 3: Creative Photography -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Creative Photography" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Hobbies</span>
+            <div class="gallery-title">Photography & Visuals</div>
+            <div class="gallery-caption">Capturing perspectives through the camera lens</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Achievements & Certifications Section
+       ========================================================================== -->
+  <section id="achievements" style="background: var(--bg-glass);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-trophy"></i> Recognitions</span>
+        <h2 class="section-title">Achievements & Milestones</h2>
+        <p class="section-subtitle">Real-world experience, competitive coding honors, and professional certifications.</p>
+      </div>
+
+      <div class="achievements-grid">
+        <!-- Achievement 1: TCS Internship -->
+        <div class="rounded-box achievement-card">
+          <div class="achievement-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="achievement-info">
+            <h4>Full-Time Internship at TCS</h4>
+            <p>Completed intensive industry internship at Tata Consultancy Services (TCS), gaining practical experience in software delivery and team collaboration.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 2: Coding Competition Winner -->
+        <div class="rounded-box achievement-card">
+          <div class="achievement-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="achievement-info">
+            <h4>Coding Competition Winner</h4>
+            <p>Won college and inter-collegiate coding challenges by solving algorithmic puzzles under strict time limits with clean and optimal code.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 3: NPTEL Courses -->
+        <div class="rounded-box achievement-card">
+          <div class="achievement-icon" style="background: rgba(99, 102, 241, 0.15); color: #6366f1;">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="achievement-info">
+            <h4>NPTEL Certified Scholar</h4>
+            <p>Completed accredited NPTEL certification courses, validating mastery of core theoretical and applied computer science principles.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 4: Technical Symposium -->
+        <div class="rounded-box achievement-card">
+          <div class="achievement-icon" style="background: rgba(6, 182, 212, 0.15); color: #06b6d4;">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="achievement-info">
+            <h4>Technical Symposium Participant</h4>
+            <p>Actively presented papers and demonstrated technical models at university tech symposiums, engaging with academic and industry experts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Connect & Collaborate</h2>
+        <p class="section-subtitle">Whether you have an internship, job opportunity, or project idea, feel free to reach out.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-card-list">
+          <a href="mailto:tejurla12@gmail.com" class="rounded-box contact-info-card" id="emailCard">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="detail-label">Email Address</div>
+              <div class="detail-value" style="font-size: 0.95rem;">tejurla12@gmail.com</div>
+              <span style="font-size: 0.775rem; color: var(--accent-primary);"><i class="fa-regular fa-copy"></i> Click to send or copy</span>
+            </div>
+          </a>
+
+          <a href="tel:+917893836775" class="rounded-box contact-info-card">
+            <div class="contact-card-icon" style="color: #10b981; background: rgba(16, 185, 129, 0.12);"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="detail-label">Phone & WhatsApp</div>
+              <div class="detail-value">+91 7893836775</div>
+              <span style="font-size: 0.775rem; color: #10b981;">Call or message anytime</span>
+            </div>
+          </a>
+
+          <div class="rounded-box contact-info-card">
+            <div class="contact-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.12);"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="detail-label">Locations</div>
+              <div class="detail-value">Eluru, Andhra Pradesh / Pondicherry</div>
+              <span style="font-size: 0.775rem; color: var(--text-muted);">Open to remote and on-site relocation</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/tejurla12" target="_blank" rel="noopener noreferrer" class="rounded-box contact-info-card">
+            <div class="contact-card-icon" style="color: white; background: #24292e;"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <div class="detail-label">GitHub Profile</div>
+              <div class="detail-value">github.com/tejurla12</div>
+              <span style="font-size: 0.775rem; color: var(--accent-cyan);">View all code and contributions</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="rounded-box">
+          <h3 style="margin-bottom: 1.25rem;">Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. rahul@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="Job Opportunity / Project Inquiry" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Hello Saran, I saw your portfolio and would love to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer & Formal Declaration
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand-logo">
+        <div class="brand-badge">ST</div>
+        <span>URLA SARAN TEJ</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#education" class="footer-link">Education</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#gallery" class="footer-link">Gallery</a>
+        <a href="#achievements" class="footer-link">Achievements</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <div class="declaration-box">
+        <strong>Formal Declaration:</strong>
+        <p>"I hereby declare that the information furnished above is true and correct to the best of my knowledge and belief."</p>
+        <p style="margin-top: 0.35rem; color: var(--accent-primary); font-weight: 600;">&mdash; URLA SARAN TEJ | Pondicherry</p>
+      </div>
+
+      <p>&copy; <span id="currentYear"></span> Urla Saran Tej. Designed for GitHub Pages & Personal Showcase.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modal: Add New Image Feature
+       ========================================================================== -->
+  <div class="modal-backdrop" id="addImageModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-plus-circle" style="color: var(--accent-primary);"></i> Add Image to Gallery</h3>
+        <button class="modal-close-btn" id="closeAddImageModalBtn">&times;</button>
+      </div>
+
+      <form id="addImageForm">
+        <div class="modal-form-group">
+          <label class="modal-label">Image Source Option</label>
+          <div style="display: flex; gap: 1rem; margin-bottom: 0.75rem;">
+            <label style="font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="imageSourceType" value="file" checked id="radioFile"> Upload Local File
+            </label>
+            <label style="font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="imageSourceType" value="url" id="radioUrl"> Image Web URL
+            </label>
+          </div>
+
+          <!-- File Upload input -->
+          <div id="fileUploadContainer">
+            <input type="file" id="imageFileInput" accept="image/*" class="modal-input" style="padding: 0.5rem;">
+          </div>
+
+          <!-- URL input -->
+          <div id="urlUploadContainer" style="display: none;">
+            <input type="url" id="imageUrlInput" class="modal-input" placeholder="https://example.com/photo.jpg">
+          </div>
+        </div>
+
+        <!-- Preview Box -->
+        <div class="modal-form-group">
+          <label class="modal-label">Image Preview</label>
+          <div class="image-preview-area" id="imagePreviewArea">
+            <span style="color: var(--text-muted); font-size: 0.85rem;"><i class="fa-regular fa-image"></i> Select an image to preview</span>
+          </div>
+        </div>
+
+        <div class="modal-form-group">
+          <label class="modal-label" for="imageTitleInput">Title / Caption</label>
+          <input type="text" id="imageTitleInput" class="modal-input" placeholder="e.g. Hackathon Finalist / Tech Meetup" required>
+        </div>
+
+        <div class="modal-form-group">
+          <label class="modal-label" for="imageTagSelect">Category Tag</label>
+          <select id="imageTagSelect" class="modal-select">
+            <option value="Photo">Photography</option>
+            <option value="Project">Project Screenshot</option>
+            <option value="Certificate">Certificate / Award</option>
+            <option value="College">College & Events</option>
+            <option value="Personal">Personal</option>
+          </select>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-outline" id="cancelAddImageBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="saveImageBtn">Save to Portfolio</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Modal: Interactive Resume Viewer & Print
+       ========================================================================== -->
+  <div class="modal-backdrop" id="resumeModal">
+    <div class="modal-box" style="max-width: 800px; max-height: 90vh; overflow-y: auto;">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-file-invoice" style="color: var(--accent-amber);"></i> Urla Saran Tej - Resume</h3>
+        <button class="modal-close-btn" id="closeResumeModalBtn">&times;</button>
+      </div>
+
+      <div style="border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem; background: var(--bg-primary);">
+        <div style="text-align: center; border-bottom: 2px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.25rem;">
+          <h2 style="font-size: 1.6rem; color: var(--text-primary);">URLA SARAN TEJ</h2>
+          <p style="color: var(--accent-primary); font-weight: 600;">MCA Student | Full Stack Web Developer</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.35rem;">
+            Email: tejurla12@gmail.com &bull; Phone: +91 7893836775 &bull; Eluru, AP / Pondicherry
+          </p>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <h4 style="color: var(--accent-amber); border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;">Career Objective</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.4rem;">
+            To work in an innovative organization where I can utilize my technical skills, enhance my knowledge, and contribute towards the growth of the company while continuously learning modern technologies.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <h4 style="color: var(--accent-amber); border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;">Education</h4>
+          <ul style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.8; list-style-position: inside;">
+            <li><strong>MCA:</strong> Pondicherry University (2025–Present) &ndash; <strong>80%</strong></li>
+            <li><strong>B.Sc Computer Science:</strong> Sir C R R College, AKNU (2025) &ndash; <strong>80%</strong></li>
+            <li><strong>Intermediate:</strong> Sir C R R College, AP Board (2022) &ndash; <strong>85%</strong></li>
+            <li><strong>SSLC:</strong> Oxford School, AP Board (2020) &ndash; <strong>90%</strong></li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <h4 style="color: var(--accent-amber); border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;">Technical Skills</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.4rem;">
+            HTML5, CSS3, JavaScript, React.js, Node.js, Java, Python, SQL, Git & GitHub.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <h4 style="color: var(--accent-amber); border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;">Achievements & Experience</h4>
+          <ul style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.4rem; line-height: 1.8; list-style-position: inside;">
+            <li>Full-Time Internship at TCS</li>
+            <li>Coding Competition Winner</li>
+            <li>Completed NPTEL Certification Courses</li>
+            <li>Participated in Technical Symposium</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem;">
+        <button class="btn btn-outline" onclick="window.print()">
+          <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+        <button class="btn btn-primary" id="doneResumeBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+    <span id="toastMessage">Success</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
